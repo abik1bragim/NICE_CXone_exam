@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: url("./NiceCxone-images/header-image\ port.jpg") no-repeat center/cover;
+
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+
+}
+
+.login_main {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+.login input {
+    width: 85%;
+    height: 35px;
+    outline-color: blue;
+    margin: 8px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+}
+
+.login .check {
+    width: 155px;
+    height: 30px;
+    display: flex;
+    /* border: 2px solid red; */
+    align-items: center;
+    justify-content: center;
+
+}
+
+.check input {
+    width: 15px;
+    margin-left: -200px;
+}
+
+.check label {
+    font-size: 13px;
+
+}
+
+.login {
+    width: 380px;
+    height: 350px;
+    /* border: 2px solid red; */
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login p {
+    font-size: 17px;
+    padding: 20px;
+    margin-left: -200px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+
+.login hr {
+    width: 100%;
+    color: #ccc;
+}
+
+.login p:nth-child(3) {
+    font-size: 13px;
+    margin-left: -160px;
+    margin-top: -5px;
+    margin-bottom: -10px;
+}
+
+.login_main img {
+    width: 190px;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-left: -190px;
+    margin-top: -100px;
+}
+
+.login button {
+    width: 85%;
+    height: 40px;
+    border: none;
+    background: #007CBE;
+    color: #fff;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.data {
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid rebeccapurple; */
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.data img {
+    width: 100%;
+    height: 305px;
+    margin-top: 30px;
+}
+
+.data p {
+    font-size: 23px;
+    letter-spacing: 1px;
+    margin: 40px;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.758);
+
+}
+
+.data span {
+    width: 90%;
+    line-height: 23px;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.732);
+}
+
+.data a {
+    text-decoration: none;
+}
+
+.button {
+    width: 250px;
+    height: 50px;
+    /* border: 2px solid red; */
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    font-size: 20px;
+    position: relative;
+    transition: .5s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button i {
+    width: 50px;
+    height: 100%;
+    padding: 10px;
+    background: #23C9FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 23px;
+    z-index: 5;
+}
+
+.color {
+    width: 250px;
+    height: 100%;
+    background: #23C9FF;
+    border-radius: 25px;
+    position: absolute;
+    z-index: 1;
+    transform: translateX(-250px);
+    transition: .5s;
+
+}
+
+.button:hover .color {
+    transform: translateX(0);
+    transition: .5s;
+}
+
+.button span {
+    font-size: 16px;
+    z-index: 5;
+}
+
+.circle i {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background: #23C9FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+    z-index: 50;
+    position: relative;
+}
+
+.circle i:nth-child(2) {
+    display: none;
+    font-size: 22px;
+    transition: .2s;
+    margin-top: 6px;
+}
+
+.button:hover i:nth-child(2) {
+    display: block;
+    transition: .2s;
+
+}
+
+.button:hover i:nth-child(1) {
+    display: none;
+    transition: .2s;
+}
+
+@media (max-width: 500px) {
+
+    .main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        /* border: 2px solid red; */
+        position: relative;
+    }
+
+    .login_main {
+        width: 100%;
+        height: 50%;
+        /* border: 2px solid red; */
+        transform: translateY(300px);
+    }
+
+    .data>img {
+        width: 100%;
+        height: 200px;
+        /* border: 2px solid red; */
+        object-fit: cover;
+    }
+
+    .data {
+        width: 100%;
+        height: 50%;
+        /* border: 2px solid red; */
+        transform: translateY(-300px);
+        position: absolute;
+
+    }
+}
